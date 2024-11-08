@@ -3,11 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./dist/styles.css" rel="stylesheet">
-  
+  <link rel="stylesheet" href="./dist/style.css">
+  <script src="https://kit.fontawesome.com/bc5071f62b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1 class="text-green-800 text-center text-2xl">Hello, World!</h1>
+  <header class="py-[1rem] px-[0.8rem] flex justify-between items-center sticky top-0 z-10">
+    <img id="logo" src="acquiredotcom-logo.b16269.svg">
+    <button id="menu-toggle" class="border-0 outline-0 lg:hidden"><i class="fa-solid fa-bars text-2xl"></i></button>
+    <nav id="nav-menu" class="hidden fixed top-0 left-0 z-50 lg:relative lg:flex lg:w-auto lg:h-auto shadow shadow-2xl shadow-[hsl(223, 47%, 23%)] w-screen h-screen mt-[1rem]">
+      <ul class="flex flex-col lg:flex-row lg:gap-[6] justify-between gap-[0.8rem] text-2xl font-bold">
+        <div class="px-[1rem] flex justify-between items-center gap-1.5 mb-[1.2rem] lg:hidden">
+          <img src="acquiredotcom-logo.b16269.svg">
+          <i id="close-menu" class="fa-solid fa-xmark text-3xl"></i>
+        </div>
+        <li class="px-[1.2rem]"><a href="#">Sellers</a></li>
+        <li class="px-[1.2rem]"><a href="#">Buyers</a></li>
+        <li class="px-[1.2rem]"><a href="#">Pricing</a></li>
+        <li class="px-[1.2rem]"><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
   
+  
+  
+  
+  <script src="scripts/navbar.js"></script>
 </body>
 </html>
